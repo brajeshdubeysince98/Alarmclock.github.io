@@ -1,137 +1,52 @@
-/* GLobal Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{
+    text-align: center;
+}
+#alarm{
+    border: 5px solid rgb(20, 20, 20);
+    border-radius: 20px;
+    width:500px;
+    background-color: rgba(152, 4, 238, 0.836);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+}
+#alarm h2{
+    text-decoration: underline;
+    color:rgb(0, 0, 0);
+}
+#ctime{
+    font-size: 1.5rem;
+}
+#set-alarm-button{
+    background-color: rgb(90, 128, 0);
+    color:antiquewhite;
+    font-size: large;
+    margin-bottom: 20px;
+}
+.line{
+    border:1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
-body {
-  font-family: sans-serif;
+#alarm-values{
+    margin-top: 20px;
+    padding: 2px;
+    margin-bottom: 20px;
 }
-
-.d-flex {
-  display: flex;
+#alarm-values select{
+    margin: 0 10px 0 10px;
 }
-
-.btn {
-  outline: none;
-  border: none;
-  background-color: wheat;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 1px;
-  transition: all 0.3s ease-in-out;
+#list{
+    list-style: none;
 }
-select {
-  appearance: none;
-  outline: black;
-  background-color: wheat;
-  padding: 0.5rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 2rem;
-  margin-right: 0.3rem;
-  cursor: pointer;
-  color: #0E141B;
-  border-color: black;
+#list li{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-around;
 }
-
-.mb {
-  margin-bottom: 1rem;
-}
-
-/* End GLobal Styles */
-
-.main-container {
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background-color: #0E141B;
-}
-
-.clock-container {
-  padding: 2rem;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  
-  background-color: #1890FF;
-}
-
-.current-time {
-  font-size: 2rem;
-  color: black;
-}
-
-.alarm-form {
-  justify-content: center;
-  width: 100%;
-
-}
-
-.submit-button {
-  border-color: black;
-  border: 10px;
-  border-radius: 2rem;
-  font-weight: bold;
-}
-
-.set-alarm-container {
-  width: 100%;
-}
-
-.set-alarm-container .set-alarm-container-title {
-  color: black;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.alarm {
-  justify-content: space-between;
-  border-radius: 30px;
-  padding: 0.5rem 1rem;
-  align-items: center;
-
-}
-.alarm .delete-alarm {
-  border-radius: 2rem;
-  background-color: rgba(230, 13, 13, 0.918);
-  font-weight: bold;
-  color: wheat;
-  font-size:xx-medium;
-}
-
-.time {
-  color: #0E141B;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.btn:focus,
-.btn:hover {
-  box-shadow: red 2px 2px 2px 1px inset, #fff -2px -2px 10px 1px inset;
-}
-
-.page-title{
-  background-color: #0E141B;
-  align-items: center;
-  text-align: center;
-  color: wheat;
-  
-}
-
-
-/* style of devices of screen size less than 768px */
-@media only screen and (min-width: 600px) {
-  /* adding padding to container */
-  .main-container {
-    padding-block: 2rem;
-  }
-  .clock-container{
-      justify-content: center;
-      border-radius: 50px;
-      width: 450px;
-      min-height: auto;
-  }
+#list li input{
+    background-color: rgb(0, 255, 229);
 }
